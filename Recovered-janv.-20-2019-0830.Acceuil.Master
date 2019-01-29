@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Acceuil.master.cs" Inherits="GestionScolarité.Acceuil" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class ="entete">
+            
+            <table style="width:100%;">
+                <tr>
+                    <td style="width: 10%">
+                        <asp:HyperLink ID="HyperLink2" runat="server">Acceuil</asp:HyperLink>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td class="auto-style2" style="width: 30%">
+                        (Utilisateur en ligne)
+                        <asp:HyperLink ID="HyperLink1" runat="server">Déconnexion</asp:HyperLink>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="buttom">
+
+        </div>
+    </form>
+</body>
+</html>
